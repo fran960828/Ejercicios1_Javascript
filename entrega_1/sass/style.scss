@@ -33,3 +33,16 @@ div.password {
 p.new__password {
   margin: 20px;
 }
+// Ejercicio LocalStorage
+.localStorage {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap:40px;
+  ul li{
+    display: flex;
+    vertical-align: middle;
+    gap:20px
+  }
+  
+}
