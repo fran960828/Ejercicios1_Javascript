@@ -6,7 +6,7 @@
 @use "./pages/pages" as *;
 @use "./themes/themes" as *;
 @use "settings" as *;
-
+// Ejercicio Calculadora
 div.entrada__numero {
   display: flex;
   justify-content: start;
@@ -25,4 +25,11 @@ div.operaciones {
 }
 #resultado {
   margin-left: 30px;
+}
+// ejercicio contraseña
+div.password {
+  margin: 20px;
+}
+p.new__password {
+  margin: 20px;
 }
