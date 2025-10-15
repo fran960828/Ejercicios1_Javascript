@@ -17,7 +17,7 @@ function guardarTareas() {
   lista.querySelectorAll("li").forEach((li) => {
     // Obtenemos el texto de la tarea
     const texto = li.firstChild.textContent.trim();
-    // Comprobamos si la tarea está marcada como completada
+    // Comprobamos si la tarea está marcada como completada (devuelve true si esta marcada)
     const completada = li.querySelector("input").checked;
     // Añadimos la tarea al array
     tareas.push({ texto, completada });
@@ -79,7 +79,7 @@ addItem.addEventListener("click", () => {
   const nombreTarea = prompt("Introduce el nombre de la tarea:");
   // Si el nombre no está vacío, creamos la tarea
   if (nombreTarea && nombreTarea.trim() !== "") {
-    crearTarea(nombreTarea.trim());
+    crearTarea(nombreTarea.trim());//Al crear la tarea como nueva no incluimos el segundo argumento que por defecto es false
   }
 });
 
